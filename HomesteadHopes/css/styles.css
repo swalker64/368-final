@@ -1,0 +1,127 @@
+/*COLOR SCHEME
+    #b57823 very light chocolate
+    #9c600d milk chocolate brown
+    #341f01 dark chocolate brown
+    #fba835 light terra cotta
+    #6f933b dark sage green
+    #a4d858 sage green
+*/
+
+/*BODY*/
+body {
+	background: url(../img/treetop.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/*MAIN*/
+#main {
+    height: 150px;
+    background: #341f01;
+    font-size: 2em;
+    margin-left: -10px;	
+	padding: 10px 10px 15px 10px;
+    opacity: .95;
+    text-align: center;
+    color: #fba835;
+    font-family: 'Lucida Calligraphy';        
+    text-shadow: -4px -1px 6px #a4d858;
+}
+
+
+/*NAVIGATION*/
+#nav {
+    margin-left: -10px;	
+    margin-bottom: 10px;
+	padding: 15px 15px 5px 5px;
+    height: 30px;
+	background: #9c600d;
+    text-align: center;
+    opacity: .95;
+}
+
+#nav a {
+	padding: 5px 10px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #fba835;
+    background: #341f01;
+    border-radius: 10px;
+}
+
+#nav a:active {
+	background-color: #fba835;
+    color: #341f01;
+}
+
+#nav a:hover {
+	background-color: #a4d858;
+    color: #341f01;
+}
+
+
+/*SIDEBAR*/
+#sidebar {
+    background: linear-gradient(to bottom, #341f01 80%, rgba(164, 216, 88, 0.00));
+	color: #a4d858;
+    opacity: .95;
+    font-weight: bold;
+}
+
+    #sidebar li {
+    	list-style-type: none;
+        text-decoration: none;
+        font-weight: normal;
+    }
+        #sidebar li a {
+            color: #fba835;
+        }
+        #sidebar li a:visited {
+            color: #fba835;
+        }
+
+        #sidebar li a:hover {
+            background: #fba835;
+            color: #341f01;
+        }
+
+    #sidebar h4 {
+        padding-left: 10px;
+    }
+
+/*PICTURES*/
+.picture {
+	height: 160px;
+	width: 180px;
+    border-radius: 25px;
+    margin: 10px 10px 0px 10px;
+    border: 5px ridge #a4d858;
+}
+
+/*SECTION (CONTENT)*/
+#section {
+	display: block;
+	height: 630px;
+	margin-left: -10px;	
+	margin-top: -10px;
+	padding: 10px;
+	background: linear-gradient(to bottom, #a4d858 80%, rgba(164, 216, 88, 0.00));
+	opacity: .95;
+    color: #341f01;
+}
+
+#section p,
+#section li {
+    list-style-type: none;
+}
+
+/*FOOTER*/
+#footer {
+	text-align: center;
+	font-size: 10px;
+	color: white;
+    background: linear-gradient(to bottom, rgba(164, 216, 88, 0.00), #341f01 90%);
+    display: block;
+	padding: 10px -5px 15px 10px;
+    margin-top: -10px;
+}
+/*FORM CONTROLS*/
