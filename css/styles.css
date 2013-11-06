@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.nav-section {
+	background: red;
+}
+
+.section.hero {
+	background: lightblue;	
+}
+
+.section {
+	background: purple;	
+}
+
+.special-row {
+	background: green;	
+}
+
+.button {
+	background: orange;	
+}
