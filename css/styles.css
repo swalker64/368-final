@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*================================
+COLOR SCHEME
+==================================
+
+PRIMARY REDS
+#fa3e54 watermelon
+#fa7080 lipstick
+#f5001D my favorite
+#9f0013 candy apple
+#b72e3e vintage mauve
+#FACFD4 light pink
+
+SECONDARY BLUES
+#1e796a teal
+#006957 dark teal
+#00a287 aqua
+#34d0b6 light aqua
+#5ed0bd tinged sky
+
+TERTIARY GREENS
+#8fb52d sage
+#719d00 peapod
+#aef100 lime
+#c4f83e key lime pie
+#d2f870 palest green
+
+WHITE-BASED TRANSPARENT
+rgda(255,255,255,0)
+
+*/
+
+
+/*================================
+HEADER SECTION
+==================================*/
+.company {
+	color: #d2f870;
+}
+
+
+/*================================
+HERO SECTION
+==================================*/
+
+.hero-image {
+    border: solid 15px #b72e3e;
+    border-radius: 100px;
+    height: 400px;
+    width: 400px;
+}
+
+.hero {
+	background: #5ed0bd;
+}
+
+.hero .hero-column h1 {
+    color: #9f0013;
+    font-family: 'Kingthings', Times New Roman, serif;
+    font-size: 2.5em;
+    padding: .5em;
+}
+
+.hero .hero-column p {
+    color: #9f0013;
+}
+
+.section.hero {
+    background-color: #FACFD4;
+}
+
+.hero-column .button.action {
+    background: #9f0013;
+    border: none;
+    border-radius: 0;
+}
+
+.hero-column .button.action:hover {
+   background: #fa7080;
+}
+
+/*================================
+NAVIGATION
+==================================*/
+.nav-section {
+	background: #d2f870;
+}
+
+.nav-link {
+    background: #719d00;
+}
+
+.nav-link:hover {
+    background: #8fb52d;
+}
+
+/*================================
+CONTENT SECTION
+==================================*/
+
+.button {
+	background: #1e796a;
+    border: outset 5px #006957;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    font-size: .75em;
+}
+
+.button:hover {
+    background: #34d0b6;
+}
+
+.section {
+    background: url("../images/light_grey.png");
+}
+
+.w-col-small-6 img {
+    border: inset 12px #5ed0bd;
+    border-radius: 4px;
+    height: 180px;
+    width: 280px;
+}
+
+img+h3 {
+    color: #1e796a;
+    font-size: 1.75em;
+    font-family: 'Kingthings', Times New Roman, serif;
+}
+
+img+h3+p {
+    color: #006957;
+}
+
+/*================================
+EMAIL/CALL SECTION
+==================================*/
+.special-row {
+	background: #d2f870;
+}
+
+.special-row .button.action {
+    background: #719d00;
+    border: none;
+    border-radius: 0;
+}
+
+.special-row .button.action:hover {
+    background: #8fb52d;
+}
+
+.special-row h3 {
+    color: #719d00;
+}
+.special-row p {
+    color: #719d00;
+}
+
+/*================================
+WEB FONT AND FONT RESIZING
+==================================*/
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Kingthings';
+    src: url('../fonts/Kingthings_Foundation.ttf');
+}
+
+body,
+.company h4 { 
+    font-family: 'Jura', arial, sans-serif;
+}
+
+body {
+    font-size: 1.15em;
+}
+
+.company h1 {
+    font-family: 'Kingthings', Times New Roman, serif;
+    font-size: 2.5em;
+    text-shadow: -2px -2px #aef100, 2px 2px #34d0b6;
+    color: #fa3e54;
+}
+
+.company h4 {
+    line-height: .9em;
+    color: #719d00;
+}
+
+.footer {
+    font-family: arial;
+    font-size: .5em;
+}
+
+.footer a {
+    color: #006957;
+}
+
+/*================================
+3D ANIMATION ON NAV LINKS
+==================================*/
+/*ADAPTED FROM http://davidwalsh.name/3d-menu*/
+
+/* basic menu styles */
+.block-menu {
+	display: block;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	display: block;
+	text-decoration: none;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+    color: #fa3e54 !important;
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+    color: #8fb52d !important;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	padding: 15px 10px;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+
+
+/*================================
+GALLERY STYLING
+==================================*/
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper .column {
+  width: 30%;
+  margin: 4.2% 1.66666667%;
+  float: left;
+}
+
+.wrapper img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 20% 0 20% 0;
+}
+
+.wrapper .ribbon {
+  font-size: .75em;
+  width: 90%;
+  position: relative;
+  background: #00a287;
+  color: WHITE;
+    border: #5ed0bd 2px solid;
+  border-radius: 50%;
+  text-align: center;
+  padding: .5em .25em;
+  margin: -1.5em 0 0 -.75em;
+  display: block;  
+}
+
+.wrapper .ribbon-content:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -.5em;
+  left: 0;
+}
+
+.wrapper .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -.5em;
+  right: 0;
+}
+
+@media only screen and (max-width: 48em){
+  
+  .wrapper .column {
+    width: 46.6666667%;
+  }
+  
+}
+
+@media only screen and (max-width: 37.5em){
+  
+  .wrapper{
+    width: 100%;
+  }
+  
+  .wrapper .column{
+    float: none;
+    margin: 4em auto;
+    width: 65%;
+  }
+  
+}
+/*================================
+MY FAVORITE 3D ANIMATION + MODS
+==================================*/
+.original3d{background:#300;
+} 
+@for $j from 1 through  25{
+.cell:nth-child(#{26 - $j}) {
+  position: absolute;
+  border-radius:100%;
+  background: rgb(100+random(55), random(0),random(0));
+box-shadow: inset -5px -5px 100px 0px black;  
+width:200px;
+  left: 30%;
+  top: 15 * $j + px;
+  height:200px;
+  opacity:0;
+  animation:myrot 3s ease-in-out infinite ($j - 1) * 200 + ms;
+}
+@keyframes myrot
+{0%,100%{opacity:0.9;transform: scale(1);}
+50%{opacity:1;transform: scale(0.2)translate(0px,0px)/*change the translation values to see the different forms*/rotate(400deg);}
+}}
+
+/*================================
+SPRITE MAP FOR BUTTONS
+==================================*/
+.sprite {
+background: url("../images/spritemap.jpg");
+}
+.heart{
+background-position: 0 0;
+width: 50px;
+height: 50px;
+}
+.mom{
+background-position: 50px 0;
+width: 50px;
+height: 50px;
+}
+.kids{
+background-position: 100px 0;
+width: 50px;
+height: 50px;
+}
+.chick{
+background-position: 150px 0;
+width: 50px;
+height: 50px;
+}
+.sewing{
+background-position: 200px 0;
+width: 50px;
+height: 50px;
+}
+.reading{
+background-position: 250px 0;
+width: 50px;
+height: 50px;
+}
+.butterfly{
+background-position: 300px 0;
+width: 50px;
+height: 50px;
+}
+.bunny{
+background-position: 350px 0;
+width: 50px;
+height: 50px;
+}
+
+
+

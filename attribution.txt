@@ -1,0 +1,26 @@
+ATTRIBUTION / ADAPTED FROM
+
+=========================================================
+WEBSITE TEMPLATE
+webflow.com/
+=========================================================
+COLOR SCHEME
+colorschemedesigner.com/
+=========================================================
+BACKGROUND TEXTURE
+http://subtlepatterns.com/
+made by Brenda Lay 11/24/2013
+=========================================================
+WEB FONTS
+http://www.fontsquirrel.com/
+'Jura' and 'Kingthings'
+=========================================================
+3D ANIMATION ON TOP NAV LINKS
+http://davidwalsh.name/3d-menu
+=========================================================
+PICTURE GALLERY
+http://codepen.io/TomHergenreter/pen/mzqxF
+=========================================================
+ORIGINAL 3D ANIMATION ON PROMISE LINK
+http://codepen.io/unmeshpro/pen/Ixqck
+=========================================================
